@@ -127,7 +127,7 @@ depth distribution over categories on them. This will take some time.<br>
 python run_seg.py --config {path to config} --dataset_name {gta or synthia} --source_preprocessed_path {path to save images and distribution} [--not_get_images] [--not_get_distributions]
 
 #Example: CDDA with MIC on synthia→cityscapes
-python run_seg.py --config configs/cdda/synthiaHR2csHR_cdda_mic --dataset_name synthia --source_preprocessed_path preprocessed/synthia_mic
+python run_seg.py --config configs/cdda/synthiaHR2csHR_cdda_mic.py --dataset_name synthia --source_preprocessed_path preprocessed/synthia_mic
 ```
 
 ## Training

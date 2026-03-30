@@ -3,7 +3,7 @@
 
 ## Overview
 
-<img src="resources/overview.png" width="900">
+<img src="resources/CVPR_framework.png" width="900">
 
 Unsupervised domain adaptation for semantic segmentation aims to 
 transfer knowledge from synthetic data to real-world data. 

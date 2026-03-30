@@ -5,30 +5,9 @@
 
 <img src="resources/CVPR_framework.png" width="900">
 
-Unsupervised domain adaptation for semantic segmentation aims to 
-transfer knowledge from synthetic data to real-world data. 
-Geometric information, such as depth, has been shown 
-to effectively bridge the domain gap. However, existing 
-methods typically integrate depth features with 
-semantic segmentation features to facilitate domain 
-transfer. While this approach improves domain adaptation,
-it also increases the complexity of the neural network 
-and often leads to ambiguous exploitation of depth 
-information. Additionally, these methods fail to evaluate
-the similarity between cross-domain depth distributions of 
-images and their corresponding semantic classes, leaving room 
-for further enhancement. 
+Unsupervised domain adaptation (UDA) for semantic segmentation aims to transfer knowledge from synthetic to real-world data.  As a geometrically stable multimodal cue, depth has shown great potential in mitigating cross-domain discrepancies. However, existing methods usually treat depth as an auxiliary modality and fuse it with semantic features at the representation level, without fully exploiting its value in structural modeling and cross-domain distribution alignment. Moreover, they rarely model cross-domain depth distribution patterns explicitly, especially the similarity of depth distributions across semantic classes, limiting further improvements. 
 
-To address this challenge, we propose 
-a novel image similarity assessment method based on the depth 
-distribution similarity of semantic classes for domain adaptation.
-Our approach adjusts the pseudo-label weights for target images 
-at the class-wise level during self-training and guides the 
-prediction of missing semantic classes in target images by 
-leveraging the depth distribution of the most similar source 
-image. This method can be seamlessly integrated into popular 
-domain adaptation frameworks, such as the DAFormer network, 
-without requiring modifications to the existing architecture. 
+To address this issue, we propose a class-wise assessment method based on semantic-class depth distribution similarity to better exploit depth information in domain adaptation. Specifically, our method measures the structural similarity between source and target images from the perspective of class-wise depth distributions, adaptively adjusts pseudo-label weights for target images during self-training, and leverages the most depth-similar source image to guide the prediction of missing semantic classes in target images. The proposed method can be seamlessly integrated into popular domain adaptation frameworks such as DAFormer without modifying the original architecture.
 
 Experimental results demonstrate that our method significantly 
 improves network performance.Our approach can be seamlessly 

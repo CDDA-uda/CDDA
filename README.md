@@ -143,7 +143,7 @@ croped_labels_path='preprocessed/synthia_mic/labels'
 A training job (e.g. CDDA(MIC) on SYNTHIA→Cityscapes) can be launched using:
 
 ```shell
-python run_experiments.py --config configs/cdda/synthiaHR2csHR_cdda_mic
+python run_experiments.py --config configs/cdda/synthiaHR2csHR_cdda_mic.py
 ```
 
 The logs and checkpoints are stored in `work_dirs/`.
